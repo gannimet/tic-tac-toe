@@ -1,0 +1,46 @@
+.board-container {
+  width: 300px;
+  margin: auto;
+
+  .board {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    gap: 8px;
+    box-shadow: 0 2px 25px #016170;
+    border-radius: 8px;
+    padding: 16px;
+  }
+
+  .game-info {
+    margin-top: 24px;
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+    color: #00e0c6;
+  }
+
+  .restart {
+    text-align: center;
+    margin-top: 24px;
+
+    &-button {
+      padding: 12px 32px;
+      border-radius: 6px;
+      border: 1px solid #00e0c6;
+      background-color: #016170;
+      color: #00e0c6;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+      box-shadow: 0 2px 25px #016170;
+      transition: 0.1s transform ease-in-out;
+
+      &:active {
+        transform: scale(0.97);
+      }
+    }
+  }
+}

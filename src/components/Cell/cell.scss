@@ -1,0 +1,12 @@
+.board__cell {
+  border: 1px solid #016170;
+  color: #00e0c6;
+  font-size: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &--winner {
+    background-color: #016170;
+  }
+}
